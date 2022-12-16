@@ -1,9 +1,14 @@
 from django.contrib import admin
-from .models import Character, Region, Type, Weapon, Constellation, VoiceActor
+from .models import Character, Region, Type, Weapon, Constellation, VoiceActor, Country
 
 
 @admin.register(Character)
 class Character(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Country)
+class Country(admin.ModelAdmin):
     pass
 
 
